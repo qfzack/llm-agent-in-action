@@ -150,7 +150,7 @@ def test_llm():
             github_token=settings.github_token,
             model_name=settings.model_name
         )
-        
+
         # 发送测试消息
         test_messages = [
             {"role": "user", "content": "请说'你好，我是AI助手'"}

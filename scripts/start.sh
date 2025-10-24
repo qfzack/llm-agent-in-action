@@ -71,7 +71,7 @@ case $choice in
     2)
         echo
         echo "启动 API 服务..."
-        echo "访问 http://localhost:8000/docs 查看 API 文档"
+        echo "访问 http://localhost:8000 查看服务状态"
         echo
         uv run python server.py
         ;;
@@ -88,8 +88,10 @@ case $choice in
         ;;
     5)
         echo
-        echo "运行测试..."
-        echo "注意: 请确保 API 服务正在运行"
+        echo "========================================"
+        echo "运行自动化测试"
+        echo "========================================"
+        echo "说明: 测试脚本会自动启动/停止服务器"
         echo
         uv run python tests/test_api.py
         ;;
